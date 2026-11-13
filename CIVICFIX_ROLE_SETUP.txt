@@ -1,0 +1,34 @@
+CIVICFIX ROLE + DASHBOARD UPDATE
+
+What was added:
+- Login page with User/Admin role switch
+- User signup
+- Optional user login; public Report Problem and Track Problem remain available without login
+- User Dashboard at /dashboard
+- Admin Dashboard at /admin
+- Protected dashboard routes
+- Navbar Login / Dashboard / Logout controls
+- ReportProblem saves reportedBy when a user is logged in
+- TrackProblem stays public and reads real saved reports
+- Admin Dashboard updates report status + timeline in localStorage
+
+Demo admin login:
+Email: admin@civicfix.com
+Password: admin123
+
+Important:
+This is a frontend/localStorage prototype. Passwords are stored locally only for demonstration.
+For the final deployed CivicFix product, authentication and report data should move to your Express + MongoDB backend.
+
+Public routes remain:
+/           Home
+/report     Report Problem (no login required)
+/track      Track Problem (no login required)
+/explore    Explore Issues
+/issues     What Needs Fixing
+
+Private routes:
+/login      Login
+/signup     User Signup
+/dashboard  User Dashboard
+/admin      Admin Dashboard

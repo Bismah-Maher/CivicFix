@@ -1,0 +1,166 @@
+/* =========================
+   HOME CTA SECTION
+========================= */
+
+.home-cta {
+    width: 100%;
+    min-height: 520px;
+    padding: 100px 7%;
+    background: #101a17;
+    color: #f5f1e8;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Decorative glow */
+  .home-cta::before {
+    content: "";
+    position: absolute;
+  
+    width: 450px;
+    height: 450px;
+  
+    right: -120px;
+    top: -150px;
+  
+    background: #a8ff3e;
+    border-radius: 50%;
+  
+    filter: blur(100px);
+    opacity: 0.12;
+  }
+  
+  /* Content */
+  
+  .home-cta > div {
+    width: 100%;
+    max-width: 1100px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Small heading */
+  
+  .home-cta span {
+    display: block;
+  
+    margin-bottom: 25px;
+  
+    color: #a8ff3e;
+  
+    font-size: 12px;
+    font-weight: 800;
+  
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  
+  /* Main heading */
+  
+  .home-cta h2 {
+    margin: 0;
+  
+    font-size: clamp(55px, 8vw, 115px);
+  
+    line-height: 0.85;
+  
+    letter-spacing: -5px;
+  
+    font-weight: 900;
+  
+    text-transform: uppercase;
+  }
+  
+  /* Green italic word */
+  
+  .home-cta h2 em {
+    color: #a8ff3e;
+  
+    font-style: normal;
+  
+    -webkit-text-stroke: 1px #a8ff3e;
+  }
+  
+  /* Description */
+  
+  .home-cta p {
+    max-width: 500px;
+  
+    margin: 35px 0;
+  
+    color: rgba(245, 241, 232, 0.65);
+  
+    font-size: 17px;
+  
+    line-height: 1.7;
+  }
+  
+  /* Button */
+  
+  .home-cta .primary-btn {
+    display: inline-flex;
+  
+    align-items: center;
+    justify-content: center;
+  
+    gap: 10px;
+  
+    padding: 16px 24px;
+  
+    background: #a8ff3e;
+  
+    color: #101a17;
+  
+    border-radius: 50px;
+  
+    text-decoration: none;
+  
+    font-size: 13px;
+  
+    font-weight: 800;
+  
+    text-transform: uppercase;
+  
+    letter-spacing: 1px;
+  
+    transition: all 0.3s ease;
+  }
+  
+  .home-cta .primary-btn:hover {
+    transform: translateY(-4px);
+  
+    padding-left: 30px;
+    padding-right: 30px;
+  
+    box-shadow: 0 15px 40px rgba(168, 255, 62, 0.2);
+  }
+  
+  
+  /* =========================
+     MOBILE
+  ========================= */
+  
+  @media (max-width: 700px) {
+  
+    .home-cta {
+      min-height: 500px;
+  
+      padding: 80px 25px;
+    }
+  
+    .home-cta h2 {
+      font-size: 58px;
+  
+      letter-spacing: -3px;
+    }
+  
+    .home-cta p {
+      font-size: 15px;
+    }
+  
+  }
